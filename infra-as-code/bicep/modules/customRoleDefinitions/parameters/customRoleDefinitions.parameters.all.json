@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "parAssignableScopeManagementGroupId": {
-      "value": "alz"
+      "value": "elxaz"
     },
     "parTelemetryOptOut": {
-      "value": false
+      "value": true
     }
   }
 }

@@ -9,10 +9,10 @@
       "value": ""
     },
     "parTopLevelManagementGroupDisplayName": {
-      "value": "Elx Azure Landing Zones"
+      "value": "EULEX Azure Landing Zones"
     },
     "parTopLevelManagementGroupParentId": {
-      "value": "elxaz"
+      "value": ""
     },
     "parLandingZoneMgAlzDefaultsEnable": {
       "value": true

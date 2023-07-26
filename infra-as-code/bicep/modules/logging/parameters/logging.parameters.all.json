@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "parLogAnalyticsWorkspaceName": {
-      "value": "elxaz-log-analytics"
+      "value": "elxaz-LogAnalyticsWorkspace"
     },
     "parLogAnalyticsWorkspaceLocation": {
       "value": "WestEurope"

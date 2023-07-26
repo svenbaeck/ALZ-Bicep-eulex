@@ -3,16 +3,16 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "parTopLevelManagementGroupPrefix": {
-      "value": "alz"
+      "value": "elxaz"
     },
     "parTopLevelManagementGroupSuffix": {
       "value": ""
     },
     "parTopLevelManagementGroupDisplayName": {
-      "value": "Azure Landing Zones"
+      "value": "Elx Azure Landing Zones"
     },
     "parTopLevelManagementGroupParentId": {
-      "value": ""
+      "value": "elxaz"
     },
     "parLandingZoneMgAlzDefaultsEnable": {
       "value": true
@@ -30,7 +30,7 @@
       "value": {}
     },
     "parTelemetryOptOut": {
-      "value": false
+      "value": true
     }
   }
 }

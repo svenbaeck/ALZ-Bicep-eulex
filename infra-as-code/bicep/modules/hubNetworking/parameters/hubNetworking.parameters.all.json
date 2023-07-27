@@ -79,13 +79,13 @@
       "value": "Standard"
     },
     "parAzFirewallAvailabilityZones": {
-      "value": [1,2]
+      "value": ["1","2"]
     },
     "parAzErGatewayAvailabilityZones": {
       "value": []
     },
     "parAzVpnGatewayAvailabilityZones": {
-      "value": [1,2,3]
+      "value": ["1","2","3"]
     },
     "parAzFirewallDnsProxyEnabled": {
       "value": false

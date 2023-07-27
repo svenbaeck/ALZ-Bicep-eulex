@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "parLogAnalyticsWorkspaceName": {
-      "value": "alz-log-analytics"
+      "value": "elxaz-LogAnalyticsWorkspace"
     },
     "parLogAnalyticsWorkspaceLocation": {
-      "value": "eastus"
+      "value": "WestEurope"
     },
     "parLogAnalyticsWorkspaceSkuName": {
       "value": "PerGB2018"
@@ -15,27 +15,16 @@
       "value": 365
     },
     "parLogAnalyticsWorkspaceSolutions": {
-      "value": [
-        "AgentHealthAssessment",
-        "AntiMalware",
-        "ChangeTracking",
-        "Security",
-        "SecurityInsights",
-        "SQLAdvancedThreatProtection",
-        "SQLVulnerabilityAssessment",
-        "SQLAssessment",
-        "Updates",
-        "VMInsights"
-      ]
+      "value": []
     },
     "parLogAnalyticsWorkspaceLinkAutomationAccount": {
-      "value": true
+      "value": false
     },
     "parAutomationAccountName": {
-      "value": "alz-automation-account"
+      "value": "elxaz-automation-account"
     },
     "parAutomationAccountLocation": {
-      "value": "eastus2"
+      "value": "WestEurope"
     },
     "parAutomationAccountUseManagedIdentity": {
       "value": true
@@ -46,7 +35,7 @@
       }
     },
     "parTelemetryOptOut": {
-      "value": false
+      "value": true
     }
   }
 }

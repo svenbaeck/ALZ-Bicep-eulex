@@ -43,7 +43,7 @@
       "value": "Standard"
     },
     "parPublicIpPrefix": {
-      "value": ""
+      "value": "elxaz-"
     },
     "parPublicIpSuffix": {
       "value": "-PublicIP"
@@ -79,7 +79,7 @@
       "value": "Standard"
     },
     "parAzFirewallAvailabilityZones": {
-      "value": ["1","2"]
+      "value": ["1","2","3"]
     },
     "parAzErGatewayAvailabilityZones": {
       "value": []
@@ -183,7 +183,7 @@
         "enableBgp": false,
         "activeActive": false,
         "enableBgpRouteTranslationForNat": false,
-        "enableDnsForwarding": true,
+        "enableDnsForwarding": false,
         "bgpPeeringAddress": "",
         "bgpsettings": {
           "asn": "65515",
@@ -193,23 +193,6 @@
       }
     },
     "parExpressRouteGatewayConfig": {
-      "value": {
-        "name": "alz-ExpressRoute-Gateway",
-        "gatewayType": "ExpressRoute",
-        "sku": "Standard",
-        "vpnType": "RouteBased",
-        "generation": "None",
-        "enableBgp": false,
-        "activeActive": false,
-        "enableBgpRouteTranslationForNat": false,
-        "enableDnsForwarding": false,
-        "bgpPeeringAddress": "",
-        "bgpsettings": {
-          "asn": "65515",
-          "bgpPeeringAddress": "",
-          "peerWeight": "5"
-        }
-      }
     },
     "parTags": {
       "value": {

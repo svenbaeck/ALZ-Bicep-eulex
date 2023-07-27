@@ -3,40 +3,34 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "parLocation": {
-      "value": "eastus"
+      "value": "WestEurope"
     },
     "parCompanyPrefix": {
-      "value": "alz"
+      "value": "elxaz"
     },
     "parHubNetworkName": {
-      "value": "alz-hub-eastus"
+      "value": "elxaz-hub-main"
     },
     "parHubNetworkAddressPrefix": {
-      "value": "10.20.0.0/16"
+      "value": "10.10.1.0/24"
     },
     "parSubnets": {
       "value": [
         {
-          "name": "AzureBastionSubnet",
-          "ipAddressRange": "10.20.0.0/24",
-          "networkSecurityGroupId": "",
-          "routeTableId": ""
-        },
-        {
           "name": "GatewaySubnet",
-          "ipAddressRange": "10.20.254.0/24",
+          "ipAddressRange": "10.10.1.128/27",
           "networkSecurityGroupId": "",
           "routeTableId": ""
         },
         {
           "name": "AzureFirewallSubnet",
-          "ipAddressRange": "10.20.255.0/24",
+          "ipAddressRange": "10.10.1.0/26",
           "networkSecurityGroupId": "",
           "routeTableId": ""
         },
         {
-          "name": "AzureFirewallManagementSubnet",
-          "ipAddressRange": "10.20.253.0/24",
+          "name": "AzureApplicationGatewaySubnet",
+          "ipAddressRange": "10.10.1.64/29",
           "networkSecurityGroupId": "",
           "routeTableId": ""
         }
@@ -55,10 +49,10 @@
       "value": "-PublicIP"
     },
     "parAzBastionEnabled": {
-      "value": true
+      "value": false
     },
     "parAzBastionName": {
-      "value": "alz-bastion"
+      "value": "elxaz-bastion"
     },
     "parAzBastionSku": {
       "value": "Standard"
@@ -67,7 +61,7 @@
       "value": "nsg-AzureBastionSubnet"
     },
     "parDdosEnabled": {
-      "value": true
+      "value": false
     },
     "parDdosPlanName": {
       "value": "alz-ddos-plan"
@@ -76,28 +70,28 @@
       "value": true
     },
     "parAzFirewallName": {
-      "value": "alz-azfw-eastus"
+      "value": "elxaz-firewall"
     },
     "parAzFirewallPoliciesName": {
-      "value": "alz-azfwpolicy-eastus"
+      "value": "elxaz-firewall-policies"
     },
     "parAzFirewallTier": {
       "value": "Standard"
     },
     "parAzFirewallAvailabilityZones": {
-      "value": []
+      "value": [1,2]
     },
     "parAzErGatewayAvailabilityZones": {
       "value": []
     },
     "parAzVpnGatewayAvailabilityZones": {
-      "value": []
+      "value": [1,2,3]
     },
     "parAzFirewallDnsProxyEnabled": {
-      "value": true
+      "value": false
     },
     "parHubRouteTableName": {
-      "value": "alz-hub-routetable"
+      "value": "elxaz-hub-routetable"
     },
     "parDisableBgpRoutePropagation": {
       "value": false
@@ -107,10 +101,10 @@
     },
     "parPrivateDnsZones": {
       "value": [
-        "privatelink.xxxxxx.azmk8s.io", // Replace xxxxxx with target region (i.e. eastus)
-        "privatelink.xxxxxx.batch.azure.com", // Replace xxxxxx with target region (i.e. eastus)
-        "privatelink.xxxxxx.kusto.windows.net", // Replace xxxxxx with target region (i.e. eastus)
-        "privatelink.xxxxxx.backup.windowsazure.com", // Replace xxxxxx with target region geo code (i.e. for eastus, the geo code is eus)
+        "privatelink.westeurope.azmk8s.io", // Replace xxxxxx with target region (i.e. eastus)
+        "privatelink.westeurope.batch.azure.com", // Replace xxxxxx with target region (i.e. eastus)
+        "privatelink.westeurope.kusto.windows.net", // Replace xxxxxx with target region (i.e. eastus)
+        "privatelink.westeurope.backup.windowsazure.com", // Replace xxxxxx with target region geo code (i.e. for eastus, the geo code is eus)
         "privatelink.adf.azure.com",
         "privatelink.afs.azure.net",
         "privatelink.agentsvc.azure-automation.net",
@@ -181,15 +175,15 @@
     },
     "parVpnGatewayConfig": {
       "value": {
-        "name": "alz-Vpn-Gateway",
+        "name": "elxaz-Vpn-Gateway",
         "gatewayType": "Vpn",
-        "sku": "VpnGw1",
+        "sku": "VpnGw2AZ",
         "vpnType": "RouteBased",
-        "generation": "Generation1",
+        "generation": "Generation2",
         "enableBgp": false,
         "activeActive": false,
         "enableBgpRouteTranslationForNat": false,
-        "enableDnsForwarding": false,
+        "enableDnsForwarding": true,
         "bgpPeeringAddress": "",
         "bgpsettings": {
           "asn": "65515",
@@ -223,7 +217,7 @@
       }
     },
     "parTelemetryOptOut": {
-      "value": false
+      "value": true
     },
     "parBastionOutboundSshRdpPorts": {
       "value": [

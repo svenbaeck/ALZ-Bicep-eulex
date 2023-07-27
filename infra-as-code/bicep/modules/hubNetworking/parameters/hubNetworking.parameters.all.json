@@ -43,7 +43,7 @@
       "value": "Standard"
     },
     "parPublicIpPrefix": {
-      "value": "elxaz-"
+      "value": ""
     },
     "parPublicIpSuffix": {
       "value": "-PublicIP"

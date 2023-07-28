@@ -3,31 +3,31 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "parTopLevelManagementGroupPrefix": {
-      "value": "alz"
+      "value": "elxaz"
     },
     "parTopLevelManagementGroupSuffix": {
       "value": ""
     },
     "parLogAnalyticsWorkSpaceAndAutomationAccountLocation": {
-      "value": "eastus"
+      "value": "westeurope"
     },
     "parLogAnalyticsWorkspaceResourceId": {
-      "value": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/alz-logging/providers/Microsoft.OperationalInsights/workspaces/alz-log-analytics"
+      "value": "/subscriptions/a541fb05-826c-466f-bc75-58f01438d0af/resourceGroups/elxaz-LogAnalyticsWorkspace-rg/providers/Microsoft.OperationalInsights/workspaces/elxaz-LogAnalyticsWorkspace"
     },
     "parLogAnalyticsWorkspaceLogRetentionInDays": {
       "value": "365"
     },
     "parAutomationAccountName": {
-      "value": "alz-automation-account"
+      "value": "elxaz-automation-account"
     },
     "parMsDefenderForCloudEmailSecurityContact": {
-      "value": "security_contact@replace_me.com"
+      "value": "CISO365Alerts@eulex-kosovo.eu"
     },
     "parDdosProtectionPlanId": {
-      "value": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-alz-hub-networking-001/providers/Microsoft.Network/ddosProtectionPlans/alz-ddos-plan"
+      "value": ""
     },
     "parPrivateDnsResourceGroupId": {
-      "value": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/rg-alz-hub-networking-001"
+      "value": ""
     },
     "parPrivateDnsZonesNamesToAuditInCorp": {
       "value": []
@@ -42,10 +42,10 @@
       "value": []
     },
     "parExcludedPolicyAssignments": {
-      "value": []
+      "value": ["Deploy-Log-Analytics"]
     },
     "parTelemetryOptOut": {
-      "value": false
+      "value": true
     }
   }
 }

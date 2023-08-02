@@ -1,10 +1,10 @@
-$appgwname = "appgateway-eulex"
-$appgwrg = "appgateway-eulex-rg"
-$subscriptionid = "d231d663-ff2f-4e35-87a4-8d51a0b77560"
-$userAssignedIdentity = "/subscriptions/d231d663-ff2f-4e35-87a4-8d51a0b77560/resourcegroups/appgateway-eulex-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/appgateway-eulex-mi"
-$keyvault = "keyvault-eulex"
-$keyvaultSubId = $subscriptionid
-$certname = "cert1"
+$appgwname = "elxaz-AppGateway"
+$appgwrg = "elxaz-AppGateway-rg"
+$subscriptionid = "bbabfd14-534f-4586-9a49-b13698b065c7"
+$userAssignedIdentity = "/subscriptions/bbabfd14-534f-4586-9a49-b13698b065c7/resourcegroups/elxaz-AppGateway-rg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/elxaz-Managed-Identity-Keyvault"
+$keyvault = "elxaz-keyvault"
+$keyvaultSubId = "14572463-1a64-4daa-8790-57a395900deb"
+$certname = "EULEXWebApps2023-2"
 
 
 Set-AzContext -SubscriptionId $keyvaultSubId

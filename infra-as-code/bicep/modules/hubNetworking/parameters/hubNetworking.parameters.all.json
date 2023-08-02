@@ -30,7 +30,7 @@
         },
         {
           "name": "AzureApplicationGatewaySubnet",
-          "ipAddressRange": "10.10.1.64/29",
+          "ipAddressRange": "10.10.1.64/27",
           "networkSecurityGroupId": "",
           "routeTableId": ""
         }

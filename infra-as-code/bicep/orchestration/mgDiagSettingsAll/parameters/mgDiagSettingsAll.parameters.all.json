@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "parTopLevelManagementGroupPrefix": {
-      "value": "alz"
+      "value": "elxaz"
     },
     "parTopLevelManagementGroupSuffix": {
       "value": ""
@@ -18,7 +18,7 @@
       "value": false
     },
     "parLogAnalyticsWorkspaceResourceId": {
-      "value": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourcegroups/alz-logging/providers/microsoft.operationalinsights/workspaces/alz-log-analytics"
+      "value": "/subscriptions/a541fb05-826c-466f-bc75-58f01438d0af/resourceGroups/elxaz-LogAnalyticsWorkspace-rg/providers/Microsoft.OperationalInsights/workspaces/elxaz-LogAnalyticsWorkspace"
     },
     "parLandingZoneMgChildren": {
       "value": []
@@ -27,7 +27,7 @@
       "value": []
     },
     "parTelemetryOptOut": {
-      "value": false
+      "value": true
     }
   }
 }
